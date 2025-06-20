@@ -1,3 +1,4 @@
+/* === Base styles === */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -28,4 +29,115 @@ body {
 .btn-light:hover {
     background-color:#0a28ad;
     color: #fff;
+}
+
+/* === About Page === */
+.about-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+section.py-5 .container p {
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* === Projects Page (card style) === */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Makes them all crop/fill consistently */
+}
+
+.img-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.img-wrapper-1 {
+    width: 105%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #3851c0;  /* changed from pink to match your button text */
+    font-weight: 600;
+}
+
+/* === Contact Page === */
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: #3851c0;  /* changed from pink */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* === Buttons === */
+.btn-primary {
+    background-color: #3851c0;
+    border-color: #3851c0;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0a28ad;
+    border-color: #0a28ad;
+    color: #fff;
+}
+
+.btn-light {
+    color: #3851c0;
+    border-color: #3851c0;
+}
+
+.btn-light:hover {
+    background-color: #0a28ad;
+    color: #fff;
+}
+
+/* === Responsive === */
+@media (max-width: 767px) {
+    .card img {
+        height: 150px;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
 }
